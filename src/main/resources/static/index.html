@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sticky-footer-navbar.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/icon_customImage.js" type="text/javascript"></script>
 </head>
 <body>
-<nav id="header-nav" class="navbar navbar-inverse">
+<nav id="header-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">eGeo</a>
@@ -25,15 +28,14 @@
         </ul>
     </div>
 </nav>
-<div id="main-content" class="container">
-    <div class="jumbotron">
-        <div id="map"></div>
-
-    </div>
+<div id="main-content" class="container-fluid">
+    <div id="map"></div>
 </div>
 
-<footer class="panel-footer">
-    <div class="container-fluid">&copy; Copyright eGeo 2017</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">&copy; Copyright eGeo 2017</p>
+    </div>
 </footer>
 
 <!--<p>Get your greeting <a href="/greeting">here</a></p>-->
