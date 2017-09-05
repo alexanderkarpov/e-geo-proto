@@ -72,7 +72,7 @@ body {
     color: #f4f4f4;
 }
 
-#logo-holder:hover,  #logo-holder:visited{
+#logo-holder:hover,  #logo-holder:visited, #logo-holder:focus{
     text-decoration: none;
 }
 
