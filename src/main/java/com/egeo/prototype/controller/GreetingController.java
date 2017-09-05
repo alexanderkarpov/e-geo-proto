@@ -10,8 +10,15 @@ public class GreetingController {
 
     @RequestMapping("/greeting")
     public String greeting(@RequestParam(value="name", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name", name);
+        model.addAttribute("name", "Sir" + name);
         return "greeting";
+    }
+
+    @RequestMapping("/map")
+    public String map(@RequestParam(value="script", required=false, defaultValue="js/map-api-clean-map.js") String script,
+                           Model model) {
+        model.addAttribute("script", script);
+        return "map";
     }
 
 }
