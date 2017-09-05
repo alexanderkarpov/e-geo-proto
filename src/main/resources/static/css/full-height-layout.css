@@ -76,3 +76,7 @@ body {
     text-decoration: none;
 }
 
+#copyright {
+    float: right;
+}
+
