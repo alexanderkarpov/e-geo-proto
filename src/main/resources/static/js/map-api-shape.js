@@ -2,8 +2,8 @@ ymaps.ready(init);
 
 function init() {
     var myMap = new ymaps.Map("map", {
-        center: [56.648, 64.094],
-        zoom: 5
+        center: [64.9863, 74.809],
+        zoom: 3
     }, {
         searchControlProvider: 'yandex#search'
     });
@@ -280,7 +280,7 @@ function init() {
             fillRule: "nonZero"
         },
         // Описываем свойства геообъекта.
-        properties:{
+        properties: {
             // Содержимое балуна.
             balloonContent: "Бассейны_тест.shp"
         }
@@ -291,15 +291,26 @@ function init() {
         // Цвет обводки.
         strokeColor: '#0000FF',
         // Общая прозрачность (как для заливки, так и для обводки).
-        opacity: 0.7,
+        opacity: 0.2,
         // Ширина обводки.
-        strokeWidth: 1,
+        strokeWidth: 2
         // Стиль обводки.
-        strokeStyle: 'shortdash'
+        // strokeStyle: 'shortdash'
     });
 
     // Добавляем многоугольник на карту.
-    myMap.geoObjects.add(myGeoObject);
+    myMap.geoObjects.add(myGeoObject)
+
+        .add(new ymaps.Placemark([60.768635816051386, 72.76500205442643], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([60.65235788279827, 74.57136437341926], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([58.70924705784458, 73.81079076542228], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([59.754806006777244, 74.66643607441888], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([58.75859051447735, 78.421768263904], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([64.98630827199558, 74.80904362591832], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([65.79780125797505, 81.36899099489229], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([59.442082487915926, 81.84434949989038], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([59.466241514332445, 72.71746620392663], {}, {iconGlyph: 'asterisk'}))
+        .add(new ymaps.Placemark([58.436604828942826, 72.05196429692926], {}, {iconGlyph: 'asterisk'}));
 
 
 }

@@ -18,7 +18,7 @@ public class GreetingController {
 
     private static final Map<String, String> SCRIPTS = new HashMap<>();
     static {
-        SCRIPTS.put("polygon", "js/map-api-polygon.js");
+        SCRIPTS.put("shape", "js/map-api-shape.js");
         SCRIPTS.put("polygon-with-image", "js/map-api-polygon-with-image.js");
         SCRIPTS.put("custom-icons", "js/icon_customImage.js");
         SCRIPTS.put("custom-lines", "js/map-api-polyline.js");
